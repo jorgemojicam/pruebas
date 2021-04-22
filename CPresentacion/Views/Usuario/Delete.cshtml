@@ -1,0 +1,58 @@
+﻿@model CPresentacion.UsuarioReference.Usuario
+
+@{
+    ViewBag.Title = "Delete";
+    ViewBag.Title = "Edit";
+    List<SelectListItem> listItems = new List<SelectListItem>();
+    listItems.Add(new SelectListItem
+    {
+        Text = "Masculino",
+        Value = "1"
+    });
+    listItems.Add(new SelectListItem
+    {
+        Text = "Femenino",
+        Value = "2"
+    });
+}
+
+<h2>Eliminar</h2>
+
+<h3>Esta seguro de eliminar estos datos?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+
+
+    @using (Html.BeginForm("Delete", "Usuario", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal">
+            <hr />
+            <label>Nombre</label>
+            @Html.TextBoxFor(model => model.Nombre, new { @disabled = "disabled" })
+            <br />
+            <label>Fecha Nacimiento</label>
+            @Html.TextBoxFor(model => model.FechaNacimiento, new { @disabled = "disabled" })
+            <br />
+            <label>Sexo</label>
+            @Html.DropDownListFor(model => model.Sexo, listItems, "-- Seleccione --", new { @disabled = "disabled" })
+
+            <br />
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Eliminar" class="btn btn-danger" />
+                </div>
+
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Cancelar", "Index")
+    </div>
+</div>

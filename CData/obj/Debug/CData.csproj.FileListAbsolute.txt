@@ -1,0 +1,10 @@
+C:\Users\jorge\source\repos\pruebas\CData\bin\Debug\CData.dll.config
+C:\Users\jorge\source\repos\pruebas\CData\bin\Debug\CData.dll
+C:\Users\jorge\source\repos\pruebas\CData\bin\Debug\CData.pdb
+C:\Users\jorge\source\repos\pruebas\CData\bin\Debug\EntityFramework.dll
+C:\Users\jorge\source\repos\pruebas\CData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jorge\source\repos\pruebas\CData\bin\Debug\EntityFramework.xml
+C:\Users\jorge\source\repos\pruebas\CData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jorge\source\repos\pruebas\CData\obj\Debug\CData.csproj.CopyComplete
+C:\Users\jorge\source\repos\pruebas\CData\obj\Debug\CData.dll
+C:\Users\jorge\source\repos\pruebas\CData\obj\Debug\CData.pdb
